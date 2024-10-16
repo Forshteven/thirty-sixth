@@ -1,0 +1,18 @@
+def add_everything_up(a, b):
+    try:
+        result = a + b
+    except TypeError:
+        if isinstance(a, str):
+            result = str(b) + a
+            print(result)
+        elif isinstance(b, str):
+            result = str(a) + b
+            print(result)
+        else:
+            result = None
+    return result
+
+
+print(add_everything_up(123.456, 'строка'))
+print(add_everything_up('яблоко', 4215))
+print(add_everything_up(123.456, 7))
