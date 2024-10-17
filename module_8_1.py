@@ -4,10 +4,8 @@ def add_everything_up(a, b):
     except TypeError:
         if isinstance(a, str):
             result = str(b) + a
-            print(result)
         elif isinstance(b, str):
             result = str(a) + b
-            print(result)
         else:
             result = None
     return result
