@@ -1,6 +1,6 @@
 def add_everything_up(a, b):
     try:
-        result = a + b
+        result = round(a + b, 3)
     except TypeError:
         if isinstance(a, str):
             result = str(b) + a
